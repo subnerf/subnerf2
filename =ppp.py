@@ -18,4 +18,11 @@ t.circle(120, steps=10)# Draws a decagon with side length approximately 73.53
 t.circle(130, steps=11)# Draws a hendecagon with side length approximately 72.00
 t.circle(140, steps=12)# Draws a dodecagon with side length approximately 71.03
 t.circle(150, steps=13)# Draws a triskaidecagon with side length approximately 70.00
+t.circle(160, steps=14)# Draws a tetradecagon with side length approximately 69.28
+t.circle(170, steps=15)# Draws a pentadecagon with side length approximately 68.00
+t.circle(180, steps=16)# Draws a hexadecagon with side length approximately 67.88
+t.circle(190, steps=17)# Draws a heptadecagon with side length approximately 67.18
+t.circle(200, steps=18)# Draws an octadecagon with side length approximately 66.67
+t.circle(210, steps=19)# Draws a nonadecagon with side length approximately 66.32
+t.circle(220, steps=20)# Draws an icosagon with side length approximately   66.00
 turtle.Screen().exitonclick()
