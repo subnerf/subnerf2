@@ -17,6 +17,9 @@ while running:
         if event.type == pygame.QUIT:
             running = False
     screen.fill("#FFFFFF")
+    # Draw the player
+
+    pygame.draw.rect(screen, "#0000FF", (20, 20, 50, 50))
     
     keys = pygame.key.get_pressed()
     if keys[pygame.K_w]:
@@ -33,6 +36,8 @@ while running:
 
 
     pygame.draw.circle(screen, (200,50,50), player_pos, 25)
+    
+    
     pygame.display.flip()
 
 
