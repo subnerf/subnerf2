@@ -25,4 +25,4 @@ t.circle(190, steps=17)# Draws a heptadecagon with side length approximately 67.
 t.circle(200, steps=18)# Draws an octadecagon with side length approximately 66.67
 t.circle(210, steps=19)# Draws a nonadecagon with side length approximately 66.32
 t.circle(220, steps=20)# Draws an icosagon with side length approximately   66.00
-turtle.Screen().exitonclick()
+turtle.Screen().exitonclick() # Keeps the window open until clicked
