@@ -31,10 +31,7 @@ while running:
         pos = pygame.mouse.get_pos()
         player_pos.x = pos[0]
         player_pos.y = pos[1]
-    
-    if event.type == pygame.MOUSEBUTTONUP:
-            pos = pygame.mouse.get_pos()
-            pygame.draw.circle(screen, "#000000", player_pos, 40)
+        pygame.draw.circle(screen, "#000000", player_pos, 40)
         
     dt = clock.tick(60) / 1000  # Limit to 60 FPS and get delta time
 
