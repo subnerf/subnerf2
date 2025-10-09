@@ -12,8 +12,11 @@ pygame.display.set_caption("Blitting Images")
 # Load images
 hero_right = pygame.image.load("C:\\Users\\klase\\Downloads\\OIP (2).webp")
 hero_left = pygame.image.load("C:\\Users\\klase\\Downloads\\OIP (1).webp")
+# Scale images
+hero_right = pygame.transform.scale(hero_right, (100, 100))
+hero_left = pygame.transform.scale(hero_left, (100, 100))
 
-# Get rectangles for positioning
+# Get rectangles
 hero_right_rect = hero_right.get_rect()
 hero_left_rect = hero_left.get_rect()
 
