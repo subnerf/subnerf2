@@ -33,14 +33,14 @@ while running:
 
     # Key press handling
     keys = pygame.key.get_pressed()
-    if keys[pygame.K_LEFT]:
-        hero_right_rect.x -= 5
-    if keys[pygame.K_RIGHT]:
-        hero_right_rect.x += 5
-    if keys[pygame.K_UP]:
-        hero_right_rect.y -= 5
-    if keys[pygame.K_DOWN]:
-        hero_right_rect.y += 5
+    if keys[pygame.K_w]:
+        hero_right_rect.x -= 1
+    if keys[pygame.K_d]:
+        hero_right_rect.x += 1
+    if keys[pygame.K_a]:
+        hero_right_rect.y -= 1
+    if keys[pygame.K_s]:
+        hero_right_rect.y += 1
 
     # Blit images to screen
     screen.blit(hero_right, hero_right_rect)
