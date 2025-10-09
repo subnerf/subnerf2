@@ -1,6 +1,6 @@
 import pygame
 
-#setup
+#setup lol
 pygame.init()
 WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 500
