@@ -47,3 +47,5 @@ while running:
     screen.blit(downloaded_text, downloaded_text_rect)
 
     pygame.display.update()
+# Add quit command at end of main loop
+pygame.quit()
