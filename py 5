@@ -1,0 +1,49 @@
+import pygame
+import sys
+
+pygame.init()
+
+# Set up display
+WINDOW_WIDTH = 800
+WINDOW_HEIGHT = 600
+screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+pygame.display.set_caption("by subnerf2")
+
+# Colors
+BLUE = (0, 0, 255)
+SILVER = (192, 192, 192)
+
+# Background color
+screen.fill(SILVER)
+
+# System font
+system_font = pygame.font.SysFont('impact', 80)
+
+# Downloaded font (make sure the .otf or .ttf file is in the same directory)
+downloaded_font = pygame.font.Font('Danger.otf', 80)
+# If you don't have the font file, you can download it from a free font website.
+# Render text surfaces
+system_text = system_font.render("This is Impact", True, BLUE, SILVER)
+downloaded_text = downloaded_font.render("This is Danger", True, BLUE, SILVER)
+
+# Get rects
+system_text_rect = system_text.get_rect()
+downloaded_text_rect = downloaded_text.get_rect()
+
+# Position text
+system_text_rect.center = (WINDOW_WIDTH // 2, 100)
+downloaded_text_rect.center = (WINDOW_WIDTH // 2, 200)
+
+# Main loop
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+
+    # Blit text
+    screen.blit(system_text, system_text_rect)
+    screen.blit(downloaded_text, downloaded_text_rect)
+
+    pygame.display.update()
