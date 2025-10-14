@@ -17,14 +17,14 @@ SILVER = (192, 192, 192)
 screen.fill(SILVER)
 
 # System font
-system_font = pygame.font.SysFont('impact', 80)
+system_font = pygame.font.SysFont('Arial', 80)
 
 # Downloaded font (make sure the .otf or .ttf file is in the same directory)
-downloaded_font = pygame.font.Font('Danger.otf', 80)
+downloaded_font = pygame.font.Font('Candara Light.ttf', 80)
 # If you don't have the font file, you can download it from a free font website.
 # Render text surfaces
-system_text = system_font.render("This is Impact", True, BLUE, SILVER)
-downloaded_text = downloaded_font.render("This is Danger", True, BLUE, SILVER)
+system_text = system_font.render("This is Arial", True, BLUE, SILVER)
+downloaded_text = downloaded_font.render("This is Candara", True, BLUE, SILVER)
 
 # Get rects
 system_text_rect = system_text.get_rect()
