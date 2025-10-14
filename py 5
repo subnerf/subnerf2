@@ -12,7 +12,7 @@ pygame.display.set_caption("by subnerf2")
 # Colors
 BLUE = (0, 0, 255)
 SILVER = (192, 192, 192)
-
+# RGB color for silver
 # Background color
 screen.fill(SILVER)
 
