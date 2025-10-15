@@ -19,7 +19,7 @@ screen.fill(SILVER)
 pygame.draw.rect(screen, BLUE, (0, 0, WINDOW_WIDTH, WINDOW_HEIGHT), 5)
 # System font
 system_font = pygame.font.SysFont('Arial', 80)
-
+# test with a common system font
 # Downloaded font (make sure the .otf or .ttf file is in the same directory)
 downloaded_font = pygame.font.Font('Candara Light.ttf', 80)
 # If you don't have the font file, you can download it from a free font website.
